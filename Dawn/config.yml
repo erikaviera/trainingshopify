@@ -1,0 +1,9 @@
+development:
+  password: italia4780
+  theme_id: "123"
+  store: https://erikatraining2.myshopify.com/
+  proxy: http://localhost:3000
+  ignore_files:
+    - "*.gif"
+    - "*.jpg"
+    - config/settings_data.json
