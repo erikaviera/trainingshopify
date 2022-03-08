@@ -199,6 +199,9 @@
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }} - {{ product.metafields.my_fields.text_metafield }}
             </h1>
+
+          <img src="{{product.metafields.my_fields.product_extra_image}}">
+
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
