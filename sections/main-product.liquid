@@ -200,6 +200,10 @@
               {{ product.title | escape }} - {{ product.metafields.my_fields.text_metafield }}
             </h1>
 
+            {{product.metafields.my_fields.color}}
+
+            <p style="color: {{ product.metafields.my_fields.color }}">Test</p>
+
 
           {{ product.metafields.my_fields.product_extra_image | img_tag }}
 
